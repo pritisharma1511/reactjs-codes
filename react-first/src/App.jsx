@@ -1,5 +1,6 @@
 import NetflixSeries from "./components/NetflixSeries.jsx";
-import "./components/Netflix.css";
+// import "./components/Netflix.css";
+import'./components/Netflix.module.css';
 import { Fragment } from "react";
 export const App = () => {
   return(
