@@ -11,8 +11,8 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
     
-    {/* <Profile /> */}
+  //   {/* <Profile /> */}
 
-    {/* <Practices /> */}
-  </StrictMode>,
+  //   {/* <Practices /> */}
+  // </StrictMode>,
 )
