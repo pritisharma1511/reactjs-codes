@@ -11,7 +11,7 @@ export const LiftingStateUp = () => {
   );
 };
 const InputComponent = ({ inputValue, setInputValue }) => {
-  // eslint-disable-next-line no-unused-vars
+ 
  
   return (
     <>
