@@ -5,11 +5,12 @@
 // import { Fragment } from "react";
 // import { EventProps } from './components/EventProps.jsx';
 // import { EventPropagation } from './components/EventPropagation.jsx';
-
-import "./components/Ev.css";
 // import {State} from "./components/hooks/State.jsx";
 // import { DerivedState } from "./components/DerivedState";
-import { LiftingStateUp } from "./components/LiftingStateUp.jsx";
+// import { LiftingStateUp } from "./components/LiftingStateUp.jsx";
+import "./components/Ev.css";
+import { ToggleSwitch } from "./components/project/ToggleSwitch/ToggleSwitch";
+
 export const App = () => {
   return(
     <section className="container">
@@ -20,7 +21,8 @@ export const App = () => {
       {/* <EventPropagation /> */}
       {/* <State /> */}
       {/* <DerivedState /> */}
-      <LiftingStateUp />
+      {/* <LiftingStateUp /> */}
+      <ToggleSwitch/>
     </section>
   );
 };
