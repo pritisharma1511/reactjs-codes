@@ -9,7 +9,7 @@
 // import { DerivedState } from "./components/DerivedState";
 // import { LiftingStateUp } from "./components/LiftingStateUp.jsx";
 import "./components/Ev.css";
-import { ToggleSwitch } from "./components/project/ToggleSwitch/ToggleSwitch";
+import { ToggleSwitch } from "./src/ToggleSwitch.jsx";
 
 export const App = () => {
   return(
