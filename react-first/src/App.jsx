@@ -10,23 +10,22 @@
 // import { LiftingStateUp } from "./components/LiftingStateUp.jsx";
 import "./components/Ev.css";
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
-import { Todo } from "./ToggleSwitch/Todo/Todo";
+import { Todo } from "./project/Todo_list/Todo.jsx";
 
 
 export const App = () => {
-  return(
-    <section className="container">
-      <Todo />
-      {/* <h1 className="card-heading">List of Best Netflix Series</h1>
-      {/* <NetflixSeries /> */}
-      {/* <EventHandling /> */}
-      {/* <EventProps /> */}
-      {/* <EventPropagation /> */}
-      {/* <State /> */}
-      {/* <DerivedState /> */}
-      {/* <LiftingStateUp /> */}
-      <ToggleSwitch/>
-    </section>
-  );
+  return<section > {<Todo />}</section>
+
+    //   {/* <h1 className="card-heading">List of Best Netflix Series</h1>
+    //   {/* <NetflixSeries /> */}
+    //   {/* <EventHandling /> */}
+    //   {/* <EventProps /> */}
+    //   {/* <EventPropagation /> */}
+    //   {/* <State /> */}
+    //   {/* <DerivedState /> */}
+    //   {/* <LiftingStateUp /> */}
+    //   {/* <ToggleSwitch/>
+    // </section> */}
+ 
 };
 
