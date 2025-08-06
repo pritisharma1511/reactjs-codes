@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductCard from './ProductCard';
-import './ProductList.css';
+import "./ProductList.css";
+
 
 const products = [
   { id: 1, name: "Smartphone", price: "₹14,999", rating: 4.3, image: "/images/product1.jpg" },
