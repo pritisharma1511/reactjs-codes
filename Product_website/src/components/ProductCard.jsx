@@ -2,19 +2,21 @@ import React from "react";
 import "./ProductCard.css";
 
 const ProductCard = ({ product }) => {
-  const { name, price, rating, image } = product;
+  const stars =
+    "★".repeat(Math.floor(product.rating)) +
+    "☆".repeat(5 - Math.floor(product.rating));
 
   return (
     <div className="product-card">
-      <img
-        src={image}
-        alt={name}
-        className="product-image"
-      />
-      <div className="product-info">
-        <h3>{name}</h3>
-        <p>{price}</p>
-        <p>⭐ {rating}</p>
+      {/* Image will enlarge on hover using CSS */}
+      <img src={product.image} alt={product.name} className="product-image" />
+      <div className="product-details">
+        <h3>{product.name}</h3>
+        <p className="price">{product.price}</p>
+        <p className="rating">
+          {stars} ({product.rating})
+        </p>
+        <button className="buy-btn">Buy Now</button>
       </div>
     </div>
   );
