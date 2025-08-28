@@ -1,0 +1,26 @@
+/* src/components/hooks/Hooks.css */
+.container {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.short-container h1 {
+  color: #333;
+}
+
+.grid-three-cols {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

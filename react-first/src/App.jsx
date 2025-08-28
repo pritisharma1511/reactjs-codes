@@ -10,16 +10,16 @@
 // import { LiftingStateUp } from "./components/LiftingStateUp.jsx";
 import "./components/Ev.css";
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
-import { Todo } from "./project/Todo_list/Todo.jsx";
-
+// import { Todo } from "./project/Todo_list/Todo.jsx";
+import { ShortCircuitExample } from "./components/hooks/ShortCircuit.jsx";
 
 export const App = () => {
-  return<section > {<Todo />}</section>
+  return<section > {<ShortCircuitExample />}</section>
 
     //   {/* <h1 className="card-heading">List of Best Netflix Series</h1>
     //   {/* <NetflixSeries /> */}
     //   {/* <EventHandling /> */}
-    //   {/* <EventProps /> */}
+    //   {/* <EventProps /> */}S
     //   {/* <EventPropagation /> */}
     //   {/* <State /> */}
     //   {/* <DerivedState /> */}
