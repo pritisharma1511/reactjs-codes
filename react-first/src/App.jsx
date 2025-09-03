@@ -11,7 +11,7 @@
 import "./components/Ev.css";
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
 // import { Todo } from "./project/Todo_list/Todo.jsx";
-import { ShortCircuitExample } from "./components/hooks/ShortCircuit.jsx";
+import ShortCircuitExample  from "./components/hooks/ShortCircuit.jsx";
 
 export const App = () => {
   return<section > {<ShortCircuitExample />}</section>
