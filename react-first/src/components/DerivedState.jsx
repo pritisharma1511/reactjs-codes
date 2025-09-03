@@ -29,5 +29,7 @@ export const DerivedState = () => {
       <p>Total Users: {userCount}</p>
       <p>Average Age: {averageAge}</p>
     </div>
+    //comment added;
+    
   );
 };
