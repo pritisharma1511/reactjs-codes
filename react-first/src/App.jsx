@@ -12,10 +12,10 @@
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
 //   import { Todo } from "./project/Todo_list/Todo.jsx";
 // import ShortCircuitExample  from "./components/hooks/ShortCircuit.jsx";
-import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact.jsx";
+import { LoginForm } from "./components/hooks/useState/LoginForm.jsx";
 
 export const App = () => {
-  return <RegistrationFormReact/>; 
+  return <LoginForm/>; 
 
     //   {/* <h1 className="card-heading">List of Best Netflix Series</h1>
     //   {/* <NetflixSeries /> */}
