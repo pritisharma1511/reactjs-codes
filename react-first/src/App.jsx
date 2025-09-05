@@ -12,10 +12,10 @@
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
 //   import { Todo } from "./project/Todo_list/Todo.jsx";
 // import ShortCircuitExample  from "./components/hooks/ShortCircuit.jsx";
-import {ContactForm} from "./components/hooks/useState/ContactForm.jsx";
+import {ReactUseEffect} from "./components/hooks/UseEffect/index.jsx";
 
 export const App = () => {
-  return <ContactForm/>; 
+  return <ReactUseEffect/>; 
 
     //   {/* <h1 className="card-heading">List of Best Netflix Series</h1>
     //   {/* <NetflixSeries /> */}
