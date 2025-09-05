@@ -12,10 +12,10 @@
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
 //   import { Todo } from "./project/Todo_list/Todo.jsx";
 // import ShortCircuitExample  from "./components/hooks/ShortCircuit.jsx";
-import {ReactUseEffect} from "./components/hooks/UseEffect/index.jsx";
+import {CleanUp} from "./components/hooks/UseEffect/CleanUp.jsx";
 
 export const App = () => {
-  return <ReactUseEffect/>; 
+  return <CleanUp/>; 
 
     //   {/* <h1 className="card-heading">List of Best Netflix Series</h1>
     //   {/* <NetflixSeries /> */}
