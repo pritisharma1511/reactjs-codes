@@ -34,7 +34,7 @@ const CounterChallenge = () => {
         Count: <span> {count} </span>
       </p>
 
-      <div>
+        <div>
         <label>
           Step:
           <input
