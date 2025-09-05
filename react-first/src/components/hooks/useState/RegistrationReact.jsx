@@ -1,62 +1,30 @@
-//* Registration Form Using Multiple State Variables
-
+//* Using Object State with Spread Operator
 //todo  Tasks:
-
-//? Set up a functional component in React.
-//? Create five separate state variables (firstName, lastName, email, password, phoneNumber).
-//? Create input fields for each piece of information.
-//? Implement onChange handlers to update state variables.
-//? Discuss the benefits and drawbacks of this approach.
+//? Refactor the registration form to use a single object (formData) as the initial state.
+//? Update input fields to use object properties.
+//? Use the spread operator to update the form data state efficiently.
+//? Discuss the benefits of using object state over multiple state variables.
 
 import "./index.css";
 import { useState } from "react";
 
 export const RegistrationFormReact = () => {
- const [user, setUser] = useState({
-    firstName:"",
-    lastName:"",
-    email:"",
-    password:"",
-    phoneNumber:","
+  const [user, setUser] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    phoneNumber: "",
   });
-  
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-
-    switch (name) {
-      case "firstName":
-        setFirstName(value);
-        break;
-
-      case "lastName":
-        setLastName(value);
-        break;
-
-      case "email":
-        setEmail(value);
-        break;
-
-      case "password":
-        setPassword(value);
-        break;
-
-      case "phone":
-        setPhoneNumber(value);
-        break;
-    }
+    setUser((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    const formData = {
-      firstName,
-      lastName,
-      email,
-      password,
-      phoneNumber,
-    };
-
-    console.log(formData);
+    console.log(user);
   };
 
   return (
@@ -120,7 +88,7 @@ export const RegistrationFormReact = () => {
 
           <input
             type="phone"
-            name="phone"
+            name="phoneNumber"
             placeholder="9876543211"
             required
             value={user.phoneNumber}
