@@ -12,6 +12,7 @@ import "./index.css";
 import { useState } from "react";
 
 export const RegistrationForm = () => {
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
