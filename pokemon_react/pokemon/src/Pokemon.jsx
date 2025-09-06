@@ -7,7 +7,7 @@ export const Pokemon = () => {
  const [error,setError]=useState(null);
 
 
-   const API = "https://pokeapi.co/api/v2/pokemon?limit=24";
+   const API = "https://pokeapi.co/api/v2/pokemon?limit=124";
    
     const fetchPokemon = async () => {
         try {
@@ -45,6 +45,14 @@ export const Pokemon = () => {
          </div>
       );
     }
+    if(error){
+        return(
+              <div>
+                <h1>Error: {error.message}</h1>
+              </div>
+        );
+    }   
+
 
   return (
   <>
