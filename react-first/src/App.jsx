@@ -12,10 +12,10 @@
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
 //   import { Todo } from "./project/Todo_list/Todo.jsx";
 // import ShortCircuitExample  from "./components/hooks/ShortCircuit.jsx";
-import {HowNotToFetchApi} from "./components/hooks/UseEffect/HowNotToFetchApi.jsx";
+import {ForwardRefs} from "./components/hooks/useRefs/ForwardRef.jsx";
 
 export const App = () => {
-  return <HowNotToFetchApi/>; 
+  return <ForwardRefs />;
 
     //   {/* <h1 className="card-heading">List of Best Netflix Series</h1>
     //   {/* <NetflixSeries /> */}
