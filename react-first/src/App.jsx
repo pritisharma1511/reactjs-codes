@@ -12,10 +12,17 @@
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
 //   import { Todo } from "./project/Todo_list/Todo.jsx";
 // import ShortCircuitExample  from "./components/hooks/ShortCircuit.jsx";
-import {ParentComponent} from "./components/PropDrilling.jsx";
+import { BioProvider } from "./components/hooks/ContextAPI/index.jsx";
+import { Home } from "./components/hooks/ContextAPI/Home.jsx";
+// import {ParentComponent} from "./components/PropDrilling.jsx";
 
 export const App = () => {
-  return <ParentComponent />;
+  return (
+    <BioProvider>
+        <Home />
+    </BioProvider>
+  );
+};
 
     //   {/* <h1 className="card-heading">List of Best Netflix Series</h1>
     //   {/* <NetflixSeries /> */}
@@ -28,5 +35,3 @@ export const App = () => {
     //   {/* <ToggleSwitch/>
     // </section> */}
  
-};
-
