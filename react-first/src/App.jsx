@@ -12,10 +12,10 @@
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
 //   import { Todo } from "./project/Todo_list/Todo.jsx";
 // import ShortCircuitExample  from "./components/hooks/ShortCircuit.jsx";
-import {UseId} from "./components/hooks/UseID/index.jsx";
+import {ParentComponent} from "./components/PropDrilling.jsx";
 
 export const App = () => {
-  return <UseId />;
+  return <ParentComponent />;
 
     //   {/* <h1 className="card-heading">List of Best Netflix Series</h1>
     //   {/* <NetflixSeries /> */}
