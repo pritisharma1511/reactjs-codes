@@ -1,17 +1,17 @@
-import { DarkLight,ThemeProvider } from "./components/hooks/ContextAPI/DarkLight";
+// import { DarkLight,ThemeProvider } from "./components/hooks/ContextAPI/DarkLight";
+
+import { ReducerComp } from "./components/hooks/UseReducer";
 
 
 
 
 export const App = () => {
   return (
-    <>
-    <ThemeProvider>
-      <DarkLight />
-    </ThemeProvider>
-   
+<>
+<ReducerComp />
     </>
-  );
+    
+  );s
 }
 
 
@@ -31,7 +31,12 @@ export const App = () => {
 
 
 
-
+{/* <>
+    <ThemeProvider>
+      <DarkLight />
+    </ThemeProvider>
+   
+    </> */}
 
 
 
