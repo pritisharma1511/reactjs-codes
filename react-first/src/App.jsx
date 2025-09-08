@@ -14,13 +14,19 @@
 // import ShortCircuitExample  from "./components/hooks/ShortCircuit.jsx";
 import { BioProvider } from "./components/hooks/ContextAPI/index.jsx";
 import { Home } from "./components/hooks/ContextAPI/Home.jsx";
+import { About } from "./components/hooks/ContextAPI/About.jsx";
+import { Services } from "./components/hooks/ContextAPI/Services.jsx";
 // import {ParentComponent} from "./components/PropDrilling.jsx";
 
 export const App = () => {
   return (
+    <>
     <BioProvider>
         <Home />
+        <About />
     </BioProvider>
+    <Services />
+    </>
   );
 };
 
