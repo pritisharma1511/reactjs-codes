@@ -38,7 +38,7 @@ export const DarkLight = () => {
           theme === "light" ? "text-gray-800" : "text-white"
         }`}
       >
-        Hello!! My React Priti Sharma here👍
+       Hello !! My react project .....Priti Sharma here 👍
       </p>
       <button
         onClick={handleToggleTheme}
