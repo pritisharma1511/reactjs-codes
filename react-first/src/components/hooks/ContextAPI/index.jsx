@@ -18,11 +18,11 @@ export const BioProvider = ({ children }) => {
   );
 };
 
-//custom hook
-const useBioContext = () => {
-  const context = useContext(BioContext);
+// custom hooks
+export const useBioContext = () => {
+  const context = use(BioContext);
   if (context === undefined) {
     throw new Error("Component must be wrapped with BioProvider");
   }
   return context;
-}
+};
