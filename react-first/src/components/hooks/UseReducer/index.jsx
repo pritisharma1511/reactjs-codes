@@ -22,8 +22,8 @@ export const ReducerComp = () => {
 
         </div>
         </>
-    )
-}
+    );
+};
     
     
     
