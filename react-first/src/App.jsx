@@ -1,14 +1,17 @@
 // import { DarkLight,ThemeProvider } from "./components/hooks/ContextAPI/DarkLight";
 
-import { ReducerComp } from "./components/hooks/UseReducer";
+// import React from "react";
+// import { ReducerComp } from "./components/hooks/UseReducer";
 
 
-
+// import { UseId } from "./components/hooks/UseID";
+// import { Counts } from "./components/hooks/Memo/MemoCount";
+import { ReactMemo } from "./components/hooks/Memo/ReactMemo";  
 
 export const App = () => {
   return (
 <>
-<ReducerComp />
+<ReactMemo />
     </>
     
   );
