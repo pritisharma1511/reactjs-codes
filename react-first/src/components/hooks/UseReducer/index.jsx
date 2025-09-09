@@ -7,15 +7,26 @@ export const ReducerComp = () => {
 
     const Reducer = (state, action) =>{
         console.log(state, action);
-        if(action.type === 'increment'){
-            return state + 1;
+        // if(action.type === 'increment'){
+        //     return state + 1;
+        // }
+        // if(action.type === 'decrement'){
+        //     return state - 1;
+        // }  
+        // if(action.type === 'reset'){
+        //     return state = 0;
+        // } 
+
+        switch(action.type){
+            case 'increment':
+                return {count : state.count + 1};
+            case 'decrement':
+                return {count : state.count - 1};
+            case 'reset':
+                return {count : 0};
+            default:
+                return state;
         }
-        if(action.type === 'decrement'){
-            return state - 1;
-        }  
-        if(action.type === 'reset'){
-            return state = 0;
-        } 
     };
     // const [count,setcount] = useState(0);
     const [state, dispatch] = useReducer(Reducer, initialState);
