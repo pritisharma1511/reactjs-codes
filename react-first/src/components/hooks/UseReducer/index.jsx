@@ -7,7 +7,10 @@ export const ReducerComp = () => {
         }
         if(action.type === 'decrement'){
             return state - 1;
-        }   
+        }  
+        if(action.type === 'reset'){
+            return state = 0;
+        } 
     };
     // const [count,setcount] = useState(0);
     const[count, dispatch] = useReducer(Reducer,0);
@@ -18,8 +21,8 @@ export const ReducerComp = () => {
         <div className= "p-4 h-lvh flex flex-col justify-center items-center">
             <h1>{count}</h1>
              <button onClick={() => dispatch({ type: 'increment' })}>increment</button>
-                <button onClick={() => dispatch({ type: 'decrement' })}>decrement</button>
-
+             <button onClick={() => dispatch({ type: 'decrement' })}>decrement</button>
+              <button onClick={() => dispatch({ type: 'reset' })}>reset</button>
         </div>
         </>
     );
