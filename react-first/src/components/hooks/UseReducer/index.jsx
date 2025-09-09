@@ -1,52 +1,50 @@
-import  { use, useReducer } from 'react';
+import { useReducer } from "react";
+
 export const ReducerComp = () => {
-    const initialState = {
-        count : 0,
-    };
+  const initialState = {
+    count: 0,
+    inc: 2,
+    dec: 2,
+  };
 
+  const reducer = (state, action) => {
+    console.log(state, action);
+    // if (action.type === "INCREMENT") {
+    //   return state + 1;
+    // }
+    // if (action.type === "DECREMENT") {
+    //   return state - 1;
+    // }
+    // if (action.type === "RESET") {
+    //   return (state = 0);
+    // }
 
-    const Reducer = (state, action) =>{
-        console.log(state, action);
-        // if(action.type === 'increment'){
-        //     return state + 1;
-        // }
-        // if(action.type === 'decrement'){
-        //     return state - 1;
-        // }  
-        // if(action.type === 'reset'){
-        //     return state = 0;
-        // } 
+    switch (action.type) {
+      case "INCREMENT":
+        return {
+          ...state,
+          count: state.count + 1,
+        };
 
-        switch(action.type){
-            case 'increment':
-                return {count: state.count + 1};
-            case 'decrement':
-                return {count: state.count - 1};
-            case 'reset':
-                return {count: 0};
-            default:
-                return state;
-        }
-    };
-    // const [count,setcount] = useState(0);
-    const [state, dispatch] = useReducer(Reducer, initialState);
-    console.log(useReducer(Reducer, 0));
+      case "DECREMENT":
+        return { ...state, count: state.count - 1 };
 
-    return (
-        <>
-        <div className= "p-4 h-lvh flex flex-col justify-center items-center">
-            <h1>{count}</h1>
-             <button onClick={() => dispatch({ type: 'increment' })}>increment</button>
-             <button onClick={() => dispatch({ type: 'decrement' })}>decrement</button>
-              <button onClick={() => dispatch({ type: 'reset' })}>reset</button>
-        </div>
-        </>
-    );
+      case "RESET":
+        return { ...state, count: 0 };
+
+      default:
+        return state;
+    }
+  };
+
+  //   const [count, setCount] = useState(0);
+  const [state, dispatch] = useReducer(reducer, initialState);
+  return (
+    <div className=" p-4 h-lvh flex flex-col justify-center items-center ">
+      <h1>{state.count}</h1>
+      <button onClick={() => dispatch({ type: "INCREMENT" })}>Increment</button>
+      <button onClick={() => dispatch({ type: "DECREMENT" })}>Decrement</button>
+      <button onClick={() => dispatch({ type: "RESET" })}>Reset</button>
+    </div>
+  );
 };
-    
-    
-    
-    
-    
-    
-    
