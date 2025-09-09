@@ -1,5 +1,10 @@
 import  { use, useReducer } from 'react';
 export const ReducerComp = () => {
+    const initialState = {
+        count : 0,
+    };
+
+
     const Reducer = (state, action) =>{
         console.log(state, action);
         if(action.type === 'increment'){
@@ -13,8 +18,8 @@ export const ReducerComp = () => {
         } 
     };
     // const [count,setcount] = useState(0);
-    const[count, dispatch] = useReducer(Reducer,0);
-    console.log(useReducer(Reducer,0));    
+    const [state, dispatch] = useReducer(Reducer, initialState);
+    console.log(useReducer(Reducer, 0));
 
     return (
         <>
