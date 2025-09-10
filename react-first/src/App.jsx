@@ -7,11 +7,11 @@
 // import { UseId } from "./components/hooks/UseID";
 // import { Counts } from "./components/hooks/Memo/MemoCount";
 import { ReactMemo } from "./components/hooks/Memo/ReactMemo";  
-
+import MemoParentComponent from "./components/hooks/Memo/UseMemo";
 export const App = () => {
   return (
 <>
-<ReactMemo />
+<MemoParentComponent />
     </>
     
   );
