@@ -4,19 +4,19 @@ const App = () => {
     const router  = createBrowserRouter([
         {
             path: "/",
-            element: <Home/>,
+            element: <Home />,
         },
         {
           path: "/about",
-          element: <About/>,
+          element: <About />,
       },
       {
         path: "/contact",
-        element: <Contact/>,
-      },  
+        element: <Contact />,
+      },
       {
         path: "/movie",
-        element: <Movie/>,
+        element: <Movie />,
       },
     ]);
 
