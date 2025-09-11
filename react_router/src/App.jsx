@@ -4,8 +4,20 @@ const App = () => {
     const router  = createBrowserRouter([
         {
             path: "/",
-            element: <h1>Hello react router</h1>
-        }
+            element: <Home/>,
+        },
+        {
+          path: "/about",
+          element: <About/>,
+      },
+      {
+        path: "/contact",
+        element: <Contact/>,
+      },  
+      {
+        path: "/movie",
+        element: <Movie/>,
+      },
     ]);
 
 
