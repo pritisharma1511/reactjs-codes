@@ -10,27 +10,31 @@ const App = () => {
       {
         path: "/",
         element: <AppLayout />,
-      },
-
-
-
-
-        {
+        children: [
+          {
             path: "/",
             element: <Home />,
-        },
-        {
-          path: "/about",
-          element: <About />,
+          },
+          {
+            path: "/about",
+            element: <About />,
+          },
+          {
+            path: "/contact",
+            element: <Contact />,
+          },
+          {
+            path: "/movie",
+            element: <Movie />,
+          },
+        ],
       },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/movie",
-        element: <Movie />,
-      },
+
+
+
+
+  
+      
     ]);
 
     // const router  = createBrowserRouter(
