@@ -5,6 +5,7 @@ import { Contact } from "./pages/Contact";
 import { Movie } from "./pages/Movie";
 import AppLayout from "./components/layout/AppLayout";
 import { ErrorPage } from "./pages/ErrorPage";
+import { NotFound } from "./pages/NotFound";
 import "./App.css";
 const App = () => {
 
@@ -32,7 +33,7 @@ const App = () => {
           },
           {
             path: "*",
-            element: <ErrorPage />,
+            element: <NotFound />,
           }
         ],
       },
