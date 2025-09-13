@@ -30,6 +30,10 @@ const App = () => {
             path: "/movie",
             element: <Movie />,
           },
+          {
+            path: "*",
+            element: <ErrorPage />,
+          }
         ],
       },
 
