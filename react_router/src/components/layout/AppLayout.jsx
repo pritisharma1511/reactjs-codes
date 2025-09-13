@@ -6,7 +6,6 @@ const AppLayout = () => {
         <>
         <Header />
         <Outlet />
-    
         <Footer />
         </>
     );
