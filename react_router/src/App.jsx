@@ -5,6 +5,7 @@ import { Contact } from "./pages/Contact";
 import { Movie } from "./pages/Movie";
 import AppLayout from "./components/layout/AppLayout";
 import { ErrorPage } from "./pages/ErrorPage";
+import { getMovieData } from "./api/GetAPIData";
 
 import "./App.css";
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           {
             path: "/movie",
             element: <Movie />,
+            loader: getMovieData,
           },
           {
             path: "*",
