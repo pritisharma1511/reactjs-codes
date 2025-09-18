@@ -7,6 +7,7 @@ import AppLayout from "./components/layout/AppLayout";
 import { ErrorPage } from "./pages/ErrorPage";
 import { getMovieData } from "./api/GetAPIData";
 import { MovieDetails } from "./components/UI/MovieDetails";
+import { Contact } from "./pages/Contact";
 
 import "./App.css";
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           {
             path: "/contact",
             element: <Contact />,
+            action: contactData,
           },
           {
             path: "/movie",
