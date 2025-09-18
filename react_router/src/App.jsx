@@ -34,6 +34,11 @@ const App = () => {
             loader: getMovieData,
           },
           {
+            path: "/movie/:movieId",
+            element: <MovieDetails />,
+            
+          },
+          {
             path: "*",
             element: <ErrorPage />,
           }
