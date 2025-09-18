@@ -37,6 +37,7 @@ const App = () => {
           {
             path: "/movie/:movieId",
             element: <MovieDetails />,
+            loader: getMovieDetails,
             
           },
           {
