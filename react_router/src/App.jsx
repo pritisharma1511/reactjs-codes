@@ -6,6 +6,7 @@ import { Movie } from "./pages/Movie";
 import AppLayout from "./components/layout/AppLayout";
 import { ErrorPage } from "./pages/ErrorPage";
 import { getMovieData } from "./api/GetAPIData";
+import { MovieDetails } from "./components/UI/MovieDetails";
 
 import "./App.css";
 const App = () => {
