@@ -30,9 +30,7 @@ const API = "https://www.omdbapi.com/?s=titanic&page=1&apikey=1c12799f";
     }, []);
 
 
-
-
-  return (
+ return (
   <ul className = "container.grid.grid-four-cols">
     {data.map((curElem) =>{
         return <Card key={curElem.imdbID} movieData={curElem} />
