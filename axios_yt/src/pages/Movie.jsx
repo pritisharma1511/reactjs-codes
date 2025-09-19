@@ -3,11 +3,14 @@ import { useEffect } from "react";
 
 export const Movie = () => {
  const API = 
-     "https://www.omdbapi.com/?i=tt3896198&apikey=1c12799f$s=titianic$page=1";
+         "https://www.omdbapi.com/?i=tt3896198&apikey=1c12799f";
+         const searchUrl = `https://www.omdbapi.com/?s=titanic&page=1&apikey=1c12799f`;
+
+
      
     const getMovieData =  async() => {
         try {
-        const res = await axios.get(API);
+        const res = await axios.get(API,searchUrl);
         console.log(res);
         } catch (error) {
             console.log("error");
