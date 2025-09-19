@@ -12,6 +12,12 @@ export const Posts = () => {
       useEffect(() => {
         getPostData();
       }, []);
+        const handleDeletePost = (id) => {};
+
+
+
+
+
       return <section className="section-post">
         <ol>
             {
@@ -21,7 +27,8 @@ export const Posts = () => {
                         <p>Title: {title}</p>
                         <p>Body: {body}</p>
                         <button>Edit</button>
-                        <button className="btn-delete">Delete</button>
+                        <button className="btn-delete"
+                         onClick={() => handleDeletePost(id)  }>Delete</button>
                     </li>
                 })
             }
