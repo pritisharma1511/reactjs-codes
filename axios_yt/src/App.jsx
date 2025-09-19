@@ -1,9 +1,6 @@
+import { Movie } from './pages/Movie'
 const App = () => {
-  return (
-    <>
-      <h1>Hello World Axios</h1>
-    </>
-  )
+  return <Movie />
 }
 
 export default App
