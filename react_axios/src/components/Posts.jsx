@@ -1,5 +1,6 @@
 import { useEffect,useState } from "react";
 import { getPost } from "../api/PostApi";
+import "../App.css";
 export const Posts = () => {
    const [data, setData] = useState([]);
 
@@ -12,7 +13,7 @@ export const Posts = () => {
         getPostData();
       }, []);
       return <section className="section-post">
-        <ul>
+        <ol>
             {
                 data.map((curElem) => {
                     const { id, body, title } = curElem;
@@ -24,6 +25,6 @@ export const Posts = () => {
                     </li>
                 })
             }
-        </ul>
+        </ol>
       </section>
     };
