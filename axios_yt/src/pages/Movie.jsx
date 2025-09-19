@@ -11,7 +11,7 @@ export const Movie = () => {
     const getMovieData =  async() => {
         try {
         const res = await axios.get(API,searchUrl);
-        console.log(res);
+        console.log(res.data.Search);
         } catch (error) {
             console.log("error");
         }   
