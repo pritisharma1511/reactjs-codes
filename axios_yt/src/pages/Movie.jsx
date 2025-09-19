@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect ,useState} from "react";
+import { Card } from "../components/UI/Card";
 
 export const Movie = () => {
     const[data, setData] = useState([]);
