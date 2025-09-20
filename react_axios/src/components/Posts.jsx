@@ -1,6 +1,8 @@
 import { useEffect,useState } from "react";
 import { getPost } from "../api/PostApi";
 import "../App.css";
+import  {Form}  from "./Form";
+
 export const Posts = () => {
    const [data, setData] = useState([]);
 
@@ -27,13 +29,9 @@ export const Posts = () => {
 
         };
 
-
-
-
-
       return (
         <>
-        <section>
+        <section className="section-form">
             <Form data={data} setData={setData} />
 
         </section>
