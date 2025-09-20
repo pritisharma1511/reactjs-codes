@@ -1,4 +1,4 @@
  export const Accordian = () => {
-    return <h1>Accordian Component</h1>
+    return <h1> The Accordian Component</h1>
 };
 
