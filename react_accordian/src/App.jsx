@@ -1,3 +1,4 @@
+import { Accordian } from "./components/Accordian";
 const App = () => {
   return <Accordian/>;
 };
