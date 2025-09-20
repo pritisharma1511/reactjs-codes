@@ -31,7 +31,13 @@ export const Posts = () => {
 
 
 
-      return <section className="section-post">
+      return (
+        <>
+        <section>
+            <Form data={data} setData={setData} />
+
+        </section>
+      <section className="section-post">
         <ol>
             {
                 data.map((curElem) => {
@@ -47,4 +53,8 @@ export const Posts = () => {
             }
         </ol>
       </section>
-    };
+      
+      </>
+      );
+     
+};
