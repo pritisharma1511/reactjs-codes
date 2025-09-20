@@ -12,7 +12,20 @@ export const Posts = () => {
       useEffect(() => {
         getPostData();
       }, []);
-        const handleDeletePost = (id) => {};
+        const handleDeletePost = async (id) => {
+            try{
+                const res = await deletePost(id);
+                if(res.status === 200) {
+                    const newUpdatedPosts = data.filter((curElem) => {
+                        return curElem.id !== id;
+                    });
+                    setData(newUpdatedPosts);
+                }
+            }catch(err){
+                console.log(err);
+            }
+
+        };
 
 
 
